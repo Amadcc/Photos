@@ -17,7 +17,6 @@ const Photos = () => {
   }, []);
 
   function searchPhotos(e) {
-    console.log(e.target.value);
     axios
       .get("https://api.unsplash.com/search/photos", {
         params: {
